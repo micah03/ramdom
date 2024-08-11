@@ -1,3 +1,10 @@
+const express = require("express");
+const app = express();
+
+
+// console.dir(app);
+
+let port = 8080;
 class Person{
     constructor(name, age){
         this.name = name;
@@ -14,18 +21,12 @@ class Student extends Person{
         super(name, age);
         this.marks = marks;
     }
-    talk(){
-        console.log(`My name is ${this.name} and I am ${this.age} years old.`);
-    }
 }
 
 class Teacher extends Person{
     constructor(name, age, subject){
         super(name, age);
         this.subject = subject;
-    }
-    talk(){
-        console.log(`My name is ${this.name} and I am ${this.age} years old.`);
     }
 }
 
